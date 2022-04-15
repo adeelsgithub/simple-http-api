@@ -1,7 +1,7 @@
 let http = require("http");
 
-let server = http.createServer((req,res) => {
-    console.log(req);
+let server = http.createServer((req:any,res:any) => {
+    console.log(req.url, req.method);
 });
 
 server.listen(5000, ()=>{
